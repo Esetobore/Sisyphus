@@ -1,0 +1,50 @@
+import 'package:flutter/material.dart';
+
+import '../../data_models/order_book.dart';
+
+class OrderbookEntryWidget extends StatelessWidget {
+  final OrderbookEntry entry;
+  final bool isBid;
+  final double maxQuantity;
+
+  const OrderbookEntryWidget({
+    super.key,
+    required this.entry,
+    required this.isBid,
+    required this.maxQuantity,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            isBid ? Colors.green.withOpacity(0.1) : Colors.red.withOpacity(0.1),
+            Colors.transparent,
+          ],
+          stops: [entry.quantity / maxQuantity, entry.quantity / maxQuantity],
+          begin: isBid ? Alignment.centerLeft : Alignment.centerRight,
+          end: isBid ? Alignment.centerRight : Alignment.centerLeft,
+        ),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            entry.price.toStringAsFixed(2),
+            style: TextStyle(
+              color: isBid ? Colors.green : Colors.red,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+          Text(
+            entry.quantity.toStringAsFixed(4),
+            style: const TextStyle(color: Colors.white70),
+          ),
+        ],
+      ),
+    );
+  }
+}

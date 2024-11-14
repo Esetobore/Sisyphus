@@ -1,0 +1,17 @@
+import 'package:flutter/material.dart';
+
+class ChartsView extends StatelessWidget {
+  const ChartsView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const SizedBox(
+      height: 400,
+      child: Column(
+        children: [
+          Text('Charts Content', style: TextStyle(color: Colors.white)),
+        ],
+      ),
+    );
+  }
+}
