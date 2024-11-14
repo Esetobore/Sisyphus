@@ -212,7 +212,7 @@ class PriceHeaderView extends StatelessWidget {
                 Text(
                   value,
                   style: TextStyle(
-                    fontSize: 14,
+                    fontSize: 12,
                     fontWeight: FontWeight.w400,
                     color: percentage.isEmpty
                         ? null
@@ -224,7 +224,7 @@ class PriceHeaderView extends StatelessWidget {
                   Text(
                     percentage,
                     style: TextStyle(
-                      fontSize: 13,
+                      fontSize: 12,
                       fontWeight: FontWeight.w400,
                       color: isPositive ? Colors.green : Colors.red,
                     ),

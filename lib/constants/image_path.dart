@@ -17,9 +17,9 @@ class ImagePaths {
   static const _iconPath = '${_initialPath}icons/';
   static const icGlobe = '${_iconPath}globe.png';
   static const icMenu = '${_iconPath}menu.png';
-  static const icCandleChart = '${_iconPath}chart.svg';
-  static const icBar1 = '${_iconPath}bar_1.svg';
-  static const icBar2 = '${_iconPath}bar_2.svg';
-  static const icBar3 = '${_iconPath}bar_3.svg';
-  static const icDropDown = '${_iconPath}drop_down.svg';
+  static const icCandleChart = '${_iconPath}chart.png';
+  static const icBar1 = '${_iconPath}bar_1.png';
+  static const icBar2 = '${_iconPath}bar_2.png';
+  static const icBar3 = '${_iconPath}bar_3.png';
+  static const icDropDown = '${_iconPath}drop_down.png';
 }

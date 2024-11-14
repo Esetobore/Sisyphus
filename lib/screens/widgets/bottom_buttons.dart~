@@ -236,7 +236,8 @@ class _BottomButtonsState extends State<BottomButtons> {
                                 ))
                             .toList(),
                         onChanged: (value) {},
-                        dropdownColor: Theme.of(context).colorScheme.primary,
+                        focusColor: Colors.transparent,
+                        dropdownColor: Colors.transparent,
                         decoration: InputDecoration(
                           labelText: "Type",
                           labelStyle: const TextStyle(

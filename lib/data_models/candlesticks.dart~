@@ -1,13 +1,13 @@
-class CandlestickModel {
-  final DateTime timestamp;
+class CandleStickModel {
+  final DateTime time;
   final double open;
   final double high;
   final double low;
   final double close;
   final double volume;
 
-  CandlestickModel({
-    required this.timestamp,
+  CandleStickModel({
+    required this.time,
     required this.open,
     required this.high,
     required this.low,
@@ -15,9 +15,9 @@ class CandlestickModel {
     required this.volume,
   });
 
-  factory CandlestickModel.fromJson(List<dynamic> json) {
-    return CandlestickModel(
-      timestamp: DateTime.fromMillisecondsSinceEpoch(json[0] as int),
+  factory CandleStickModel.fromJson(List<dynamic> json) {
+    return CandleStickModel(
+      time: DateTime.fromMillisecondsSinceEpoch(json[0] as int),
       open: double.parse(json[1].toString()),
       high: double.parse(json[2].toString()),
       low: double.parse(json[3].toString()),

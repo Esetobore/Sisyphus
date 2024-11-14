@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../controller/price_header_controller.dart';
 import '../../data_models/price_data.dart';
-import '../../utils/price_service.dart';
-import '../../utils/web_socket_service.dart';
+import '../../utils/services/price_service.dart';
+import '../../utils/services/web_socket_service.dart';
 
 class PrinceHeader extends StatefulWidget {
   const PrinceHeader({super.key});

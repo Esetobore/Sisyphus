@@ -16,6 +16,7 @@ dependencies:
 
   cupertino_icons: ^1.0.8
   http: ^1.1.0
+  k_chart: ^0.7.1
   web_socket_channel: ^3.0.1
 
 dev_dependencies:

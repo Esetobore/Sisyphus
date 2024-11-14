@@ -41,7 +41,7 @@ class _ChartOrderState extends State<ChartOrder> {
   Widget _buildSelectedView() {
     switch (selectedTabIndex) {
       case 0:
-        return const ChartView();
+        return const ChartsView();
       case 1:
         return const OrderBookScreen(
           symbol: 'btcusdt',

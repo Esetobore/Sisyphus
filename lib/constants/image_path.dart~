@@ -21,6 +21,5 @@ class ImagePaths {
   static const icBar1 = '${_iconPath}bar_1.svg';
   static const icBar2 = '${_iconPath}bar_2.svg';
   static const icBar3 = '${_iconPath}bar_3.svg';
-  static const icInfo = '${_iconPath}info_circle.png';
   static const icDropDown = '${_iconPath}drop_down.svg';
 }
