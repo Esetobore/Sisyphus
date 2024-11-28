@@ -91,7 +91,6 @@ class CustomTabBar extends StatelessWidget {
 
   Widget _buildTab(BuildContext context, String title, int index) {
     final isSelected = selectedIndex == index;
-
     return Expanded(
       child: GestureDetector(
         onTap: () => onTabChanged(index),
